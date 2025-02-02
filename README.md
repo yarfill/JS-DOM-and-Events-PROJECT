@@ -1,1 +1,1 @@
-# JS-Project-My-Number
+# JS-DOM-and-Events-PROJECT
