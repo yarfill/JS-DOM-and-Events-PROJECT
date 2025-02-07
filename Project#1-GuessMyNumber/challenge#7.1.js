@@ -12,7 +12,6 @@ let score = 20;
       // When player win the game
     } else if (guess === secretNumber) {
       document.querySelector('.message').textContent = 'Correct Number!';
-      score = score + 1;
       document.querySelector('.score').textContent = score;
 
       document.querySelector('body').style.backgroundColor = '#60b347';
@@ -59,14 +58,9 @@ let score = 20;
     score = 20;
     secretNumber = Math.trunc(Math.random() * 20) + 1;
 
-    document.querySelector('.message').textContent = 'Start guessing...';
-   
     document.querySelector('body').style.backgroundColor = '#222';
+    document.querySelector('.message').textContent = 'Start guessing...';
     document.querySelector('.number').style.width = '15rem';
     document.querySelector('.number').textContent = '?';
     document.querySelector('.guess').value = '';
-
-    if(score === score) {
-      document.querySelector('.highscore').textContent = score;
-    }
   });
